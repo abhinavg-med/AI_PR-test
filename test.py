@@ -2,7 +2,7 @@ from flask import Flask, request
 import sqlite3
 import os
 
-app = Flask(__name__)
+app = Flask(__name__) 
 
 # Hardcoded credentials (A02:2021-Cryptographic Failures)
 DB_NAME = "users.db"
