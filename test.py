@@ -19,7 +19,7 @@ def get_user():
     result = cursor.fetchall()
     conn.close()
     
-    return str(result) if result else "No user found."
+    return str(result) if result else "No user found." 
 
 # XSS Vulnerability (A07:2021-Identification and Authentication Failures)
 @app.route("/comment", methods=["POST"])
